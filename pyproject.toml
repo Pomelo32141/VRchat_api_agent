@@ -1,0 +1,22 @@
+[project]
+name = "vrc-agent"
+version = "0.1.0"
+description = "AI agent that watches game window, listens to audio, decides actions, and speaks."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.59.0",
+  "mss>=10.1.0",
+  "pygetwindow>=0.0.9",
+  "pyautogui>=0.9.54",
+  "pydirectinput>=1.0.4",
+  "python-osc>=1.9.3",
+  "Pillow>=11.1.0",
+  "sounddevice>=0.5.1",
+  "numpy>=2.2.2",
+  "python-dotenv>=1.0.1",
+  "pyttsx3>=2.98"
+]
+
+[tool.uv]
+package = false

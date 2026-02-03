@@ -1,0 +1,12 @@
+openai>=1.59,<2
+mss>=10,<11
+pygetwindow>=0.0.9,<1
+pyautogui>=0.9.54,<1
+pydirectinput>=1.0.4,<2
+python-osc>=1.9.3,<2
+Pillow>=11,<12
+sounddevice>=0.5,<1
+numpy>=2.2,<3
+python-dotenv>=1.0,<2
+pyttsx3>=2.98,<3
+httpx>=0.28,<1

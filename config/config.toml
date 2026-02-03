@@ -1,0 +1,48 @@
+[api]
+base_url = "https://api.siliconflow.cn/v1"
+api_key = "${SILICONFLOW_API_KEY}"
+timeout_sec = 90
+
+[models]
+vision = "Qwen/Qwen3-VL-30B-A3B-Instruct"
+asr = "FunAudioLLM/SenseVoiceSmall"
+planner = "deepseek-ai/DeepSeek-V3.2-Exp"
+
+[window]
+title_keyword = "VRChat"
+
+[audio]
+enabled = true
+sample_rate = 16000
+capture_seconds = 3.0
+
+[runtime]
+loop_interval_sec = 2.4
+dry_run = true
+observe_only = false
+tts_enabled = false
+idle_interval_min_sec = 0.30
+idle_interval_max_sec = 0.70
+idle_hesitate_idle_prob = 0.28
+idle_hesitate_pause_prob = 0.34
+idle_look_jitter_min_deg = 0.8
+idle_look_jitter_max_deg = 2.0
+idle_look_overshoot_prob = 0.08
+idle_small_step_move_prob = 0.14
+intent_ttl_sec = 3.4
+
+[chat]
+mode = "auto"
+open_key = "y"
+osc_host = "127.0.0.1"
+osc_port = 9000
+
+[prompt]
+vision = "Describe the current game scene briefly: main context, interactable objects, nearby characters."
+planner = "Control one game character. Return strict JSON with keys: speak, actions, next_focus."
+
+[memory]
+enabled = true
+file_path = "data/memory.jsonl"
+max_records = 1000
+retrieve_top_k = 5
