@@ -1,0 +1,2 @@
+# VRchat_api_agent
+通过AI来操控你的VRchat游戏，一个靠AI做成的半成品
